@@ -1,0 +1,169 @@
+.main {
+  flex: 1;
+  padding: 3rem 0 5rem;
+}
+
+.shell {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--pad-x);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr);
+  gap: clamp(2rem, 6vw, 6rem);
+  align-items: start;
+}
+
+.left h1 {
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  margin-top: 1rem;
+}
+
+.italic {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--terracotta);
+}
+
+.lede {
+  margin-top: 1.75rem;
+  max-width: 40ch;
+  font-size: 1.05rem;
+}
+
+.meta {
+  margin-top: 3rem;
+  border-top: 1px solid var(--rule);
+}
+
+.meta > div {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--rule);
+  gap: 1rem;
+}
+
+.meta dt {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.meta dd {
+  color: var(--ink);
+  line-height: 1.55;
+}
+
+.right {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  padding: 3rem;
+  border-radius: 4px;
+  box-shadow: var(--shadow-md);
+  position: sticky;
+  top: 100px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.submit {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.fine {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.error {
+  color: var(--terracotta-deep);
+  background: rgba(176, 69, 36, 0.08);
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  font-size: 0.92rem;
+}
+
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  animation: fadeUp 0.6s ease both;
+}
+
+.confirmation h2 {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  margin-top: 0.5rem;
+}
+
+.confirmCopy {
+  font-size: 1.05rem;
+  max-width: 50ch;
+}
+
+.receipt {
+  margin-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+
+.receipt > div {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--rule);
+  font-size: 0.98rem;
+  gap: 1rem;
+}
+
+.receipt dt {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.status {
+  display: inline-flex;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(63, 74, 34, 0.14);
+  color: var(--olive-deep);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  align-self: start;
+}
+
+@media (max-width: 900px) {
+  .shell {
+    grid-template-columns: 1fr;
+  }
+  .right {
+    position: static;
+    padding: 2rem;
+  }
+  .row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
