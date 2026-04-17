@@ -18,9 +18,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Bella Tavola — Trattoria Italiana",
+  title: "Nonno Franco — Ristorante Italiano",
   description:
-    "A family-run trattoria serving seasonal Italian fare since 1987. Wood-fired pizzas, handmade pasta, and an ever-changing wine list.",
+    "Italienisches Restaurant in Ulm. Authentische italienische Küche mit frischen Zutaten und hausgemachter Pasta.",
 };
 
 export default function RootLayout({
@@ -29,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${dmSans.variable}`}>
+    <html lang="de" className={`${fraunces.variable} ${dmSans.variable}`}>
       <body>
         <div className="page-wrap">
           <Nav />

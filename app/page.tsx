@@ -18,15 +18,15 @@ export default async function Home() {
       <section className={styles.hero}>
         <div className={styles.heroGrid}>
           <div className={styles.heroCopy}>
-            <span className="eyebrow">Trattoria · Est. 1987</span>
+            <span className="eyebrow">Ristorante Italiano · Ulm</span>
             <h1 className={styles.heroTitle}>
-              Bella
-              <span className={styles.italic}> Tavola</span>
+              Nonno
+              <span className={styles.italic}> Franco</span>
               <span className={styles.heroMark}>.</span>
             </h1>
             <p className={styles.lede}>
               {restaurant?.about ??
-                "A family-run trattoria serving seasonal Italian fare since 1987."}
+                "Authentische italienische Küche in Ulm. Frische Zutaten, hausgemachte Pasta und herzliche Gastfreundschaft."}
             </p>
             <div className={styles.ctas}>
               <Link href="/reservations" className="btn btn-primary">
@@ -39,9 +39,9 @@ export default async function Home() {
           </div>
           <aside className={styles.heroAside}>
             <div className={styles.stamp}>
-              <span>since</span>
-              <strong>1987</strong>
-              <span>riverside</span>
+              <span>Ulm</span>
+              <strong>NF</strong>
+              <span>Italia</span>
             </div>
             <dl className={styles.facts}>
               <div>
@@ -106,7 +106,7 @@ export default async function Home() {
                 <h3 className={styles.dishName}>{item.name}</h3>
                 <p>{item.description}</p>
                 <span className={styles.dishPrice}>
-                  ${item.price.toFixed(2)}
+                  {item.price.toFixed(2)} €
                 </span>
               </div>
             </article>
@@ -117,28 +117,27 @@ export default async function Home() {
       <section className={styles.story}>
         <div className={styles.storyInner}>
           <div className={styles.storyCopy}>
-            <span className="eyebrow">La Famiglia</span>
+            <span className="eyebrow">Über Uns</span>
             <h2>
-              Three generations. One oven. <br />
-              Dough that rests seventy-two hours.
+              Tradition trifft Leidenschaft. <br />
+              Echte italienische Küche in Ulm.
             </h2>
             <p>
-              Bella Tavola began as a twelve-seat room on Olive Street. Today
-              the dining room is larger but the kitchen still runs on the same
-              hand-bound notebook of recipes, translated from a village in
-              Abruzzo in 1963. We source what is seasonal, we cook what is
-              honest, we pour what we drink at home.
+              Bei Nonno Franco kochen wir mit Herz und frischen Zutaten —
+              so wie es Nonno Franco uns beigebracht hat. Jedes Gericht
+              erzählt eine Geschichte aus Italien, serviert mit Liebe
+              und Gastfreundschaft mitten in Ulm.
             </p>
-            <div className={styles.signature}>— Nonna Lucia</div>
+            <div className={styles.signature}>— Familie Giordano</div>
           </div>
           <div className={styles.storyVisual}>
             <div className={styles.storyCard}>
-              <span className={styles.storyLabel}>Tonight’s oven</span>
+              <span className={styles.storyLabel}>Unsere Philosophie</span>
               <p className={styles.storyQuote}>
-                &ldquo;If the crust doesn&rsquo;t crack, the fire was not hot
-                enough.&rdquo;
+                &ldquo;Gutes Essen braucht Zeit, Liebe und die besten
+                Zutaten.&rdquo;
               </p>
-              <span className={styles.storyAuthor}>— Marco, Pizzaiolo</span>
+              <span className={styles.storyAuthor}>— Nonno Franco</span>
             </div>
           </div>
         </div>

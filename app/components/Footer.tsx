@@ -9,24 +9,24 @@ export default function Footer() {
       <div className={styles.inner}>
         <div className={styles.cols}>
           <div>
-            <p className={styles.wordmark}>Bella Tavola</p>
-            <p className={styles.tag}>Trattoria · Est. 1987</p>
+            <p className={styles.wordmark}>Nonno Franco</p>
+            <p className={styles.tag}>Ristorante Italiano · Ulm</p>
           </div>
           <div>
-            <p className={styles.heading}>Visit</p>
-            <p>221 Olive Street</p>
-            <p>Riverside</p>
+            <p className={styles.heading}>Adresse</p>
+            <p>Gänswieseweg 13</p>
+            <p>89073 Ulm</p>
           </div>
           <div>
-            <p className={styles.heading}>Hours</p>
-            <p>Mon–Thu 17:00–22:00</p>
-            <p>Fri–Sat 12:00–23:00</p>
-            <p>Sun 12:00–21:00</p>
+            <p className={styles.heading}>Öffnungszeiten</p>
+            <p>Mo, Mi–Sa 11:30–14:00 · 17:30–21:30</p>
+            <p>So 11:30–14:00 · 17:30–21:00</p>
+            <p>Di Ruhetag</p>
           </div>
           <div>
-            <p className={styles.heading}>Contact</p>
-            <p>+1 (555) 012-3344</p>
-            <p>hello@bellatavola.test</p>
+            <p className={styles.heading}>Kontakt</p>
+            <p>+49 178 98 28 881</p>
+            <p>info@nonno-franco.de</p>
           </div>
           <div>
             <p className={styles.heading}>Site</p>
@@ -36,7 +36,7 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles.base}>
-          <span>© {year} Bella Tavola</span>
+          <span>© {year} Nonno Franco</span>
           <span className={styles.credit}>Cucina di famiglia</span>
         </div>
       </div>

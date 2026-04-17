@@ -3,7 +3,7 @@ import { prisma } from "@/lib/db";
 import styles from "./menu.module.css";
 
 export const metadata = {
-  title: "Menu — Bella Tavola",
+  title: "Speisekarte — Nonno Franco",
 };
 
 export default async function MenuPage() {
@@ -75,7 +75,7 @@ export default async function MenuPage() {
                       <h3>{item.name}</h3>
                       <span className={styles.dots} aria-hidden />
                       <span className={styles.price}>
-                        ${item.price.toFixed(2)}
+                        {item.price.toFixed(2)} €
                       </span>
                     </div>
                     {item.description && (

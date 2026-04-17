@@ -5,10 +5,10 @@ export default function Nav() {
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
-        <Link href="/" className={styles.brand} aria-label="Bella Tavola home">
-          <span className={styles.brandMark}>BT</span>
+        <Link href="/" className={styles.brand} aria-label="Nonno Franco home">
+          <span className={styles.brandMark}>NF</span>
           <span className={styles.brandName}>
-            Bella<span className={styles.brandDot}>·</span>Tavola
+            Nonno<span className={styles.brandDot}>·</span>Franco
           </span>
         </Link>
         <nav className={styles.links} aria-label="primary">

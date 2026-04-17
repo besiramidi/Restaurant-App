@@ -79,36 +79,36 @@ export default function ReservationsPage() {
     <main className={styles.main}>
       <div className={styles.shell}>
         <aside className={styles.left}>
-          <span className="eyebrow">Tavolo per Due</span>
+          <span className="eyebrow">Reservierung</span>
           <h1>
-            Book a <em className={styles.italic}>table</em>.
+            Tisch <em className={styles.italic}>reservieren</em>.
           </h1>
           <p className={styles.lede}>
-            The dining room holds thirty-eight covers. We seat in two-hour
-            windows so each table can breathe — and so can the kitchen.
+            Sichern Sie sich Ihren Tisch bei Nonno Franco. Wir freuen uns
+            auf Ihren Besuch!
           </p>
           <dl className={styles.meta}>
             <div>
-              <dt>Hours</dt>
+              <dt>Öffnungszeiten</dt>
               <dd>
-                Mon–Thu 17:00–22:00
+                Mo, Mi–Sa 11:30–14:00 · 17:30–21:30
                 <br />
-                Fri–Sat 12:00–23:00
+                So 11:30–14:00 · 17:30–21:00
                 <br />
-                Sun 12:00–21:00
+                Di Ruhetag
               </dd>
             </div>
             <div>
-              <dt>Large parties</dt>
+              <dt>Große Gruppen</dt>
               <dd>
-                For eight guests or more, please call
+                Ab 8 Personen bitte telefonisch reservieren
                 <br />
-                +1 (555) 012-3344
+                +49 178 98 28 881
               </dd>
             </div>
             <div>
-              <dt>Private dining</dt>
-              <dd>The cellar seats fourteen. Inquire by email.</dd>
+              <dt>Kontakt</dt>
+              <dd>info@nonno-franco.de</dd>
             </div>
           </dl>
         </aside>

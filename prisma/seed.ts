@@ -19,14 +19,14 @@ async function main() {
   // restaurant info
   await prisma.restaurant.create({
     data: {
-      name: "Bella Tavola",
+      name: "Nonno Franco",
       about:
-        "A family-run trattoria serving seasonal Italian fare since 1987. Wood-fired pizzas, handmade pasta, and an ever-changing wine list.",
-      address: "221 Olive St, Riverside",
-      phone: "+1 (555) 012-3344",
-      email: "hello@bellatavola.test",
+        "Authentische italienische Küche in Ulm. Frische Zutaten, hausgemachte Pasta und herzliche Gastfreundschaft.",
+      address: "Gänswieseweg 13, 89073 Ulm",
+      phone: "+49 178 98 28 881",
+      email: "info@nonno-franco.de",
       hours:
-        "Mon-Thu 17:00-22:00 · Fri-Sat 12:00-23:00 · Sun 12:00-21:00",
+        "Mo, Mi–Sa 11:30–14:00 · 17:30–21:30 | So 11:30–14:00 · 17:30–21:00 | Di Ruhetag",
     },
   });
 
